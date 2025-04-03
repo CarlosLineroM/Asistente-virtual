@@ -173,6 +173,38 @@ def pedir_cosas():
         elif 'broma' in pedido:
             hablar(pyjokes.get_joke('es'))
             continue
+         elif 'cómo estás' in pedido:
+            hablar('Estoy bien, gracias por preguntar')
+            continue
+
+        elif 'cuál es tu nombre' in pedido:
+            hablar('Soy Helena, tu asistente virtual')
+            continue
+
+        elif 'te gusta la música' in pedido:
+            hablar('Sí, me encanta la música. ¿Quieres que ponga una canción?')
+            continue
+
+        elif 'abre facebook' in pedido:
+            hablar('Abriendo Facebook')
+            webbrowser.open('https://www.facebook.com')
+            continue
+
+        elif 'abre twitter' in pedido:
+            hablar('Abriendo Twitter')
+            webbrowser.open('https://www.twitter.com')
+            continue
+
+        elif 'abre instagram' in pedido:
+            hablar('Abriendo Instagram')
+            webbrowser.open('https://www.instagram.com')
+            continue
+
+        elif 'abre spotify' in pedido:
+            hablar('Abriendo Spotify')
+            webbrowser.open('https://open.spotify.com')
+            continue
+    
         elif 'precio de las acciones' in pedido:
             accion = pedido.split('de'[-1].strip())
             cartera = {'apple':'APPL',
